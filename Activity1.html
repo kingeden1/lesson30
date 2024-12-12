@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation in JS</title>
+    <script>
+        function validate()
+        {
+            var x =document.forms["myform"]["fname"].value;
+            if(x =="")
+        {
+            //(alert "name can not be empty!");
+            document.getElementById("messege").innerHTML="Name can not be empty";
+            return false; 
+        }
+        else
+        document.write("form submit successfully!");
+        }
+    
+    </script>
+</head>
+<body>
+   <form>
+    name : <input type="text" name = "fname">
+    <button type="submit">submit</button>
+    <p id="messege" style="color: red;font-size: 12px ; font-weight: bold;"></p>
+   </form>
+   
+</body>
+</html>
